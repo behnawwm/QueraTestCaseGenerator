@@ -58,13 +58,13 @@ while True:
     f.write(out)
     f.close()
 
-    print("done? type \"Y\" ")
+    print("done? type \"Y\" \tOtherwise, type anything:")
     if input() == "Y":
         if __name__ == '__main__':
             zipf = zipfile.ZipFile(folderName + '.zip', 'w', zipfile.ZIP_DEFLATED)
             zipdir(path, zipf)
             zipf.close()
-        break;
+        break
 
     cnt += 1
 print("GG!")
