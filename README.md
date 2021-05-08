@@ -5,4 +5,4 @@ Simple script which generates [Quera.ir](https://Quera.ir) test cases inside pro
 This script can be used by everyone who want to write their own test cases for their questions on Quera.
 
 
-(Test cases are divided into 2 folders: `in` & `out` , and each testcase follows {input1,input2,...,output1,output2,...} pattern )
+(Test cases are divided into 2 folders: `in` & `out` , and each folder follows { input1.txt , input2.txt , ... } || { output1.txt , output2.txt , ...} pattern )
