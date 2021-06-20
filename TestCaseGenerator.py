@@ -1,7 +1,6 @@
 import os
 import zipfile
 
-
 def zipdir(path, ziph):
     # ziph is zipfile handle
     for root, dirs, files in os.walk(path):
@@ -9,11 +8,12 @@ def zipdir(path, ziph):
             ziph.write(os.path.join(root, file), os.path.relpath(os.path.join(root, file), os.path.join(path, '..')))
 
 
+
 path = os.getcwd()
 
 print("Enter Folder Name:")
 folderName = input()
-path += "\\" + folderName;
+path += "\\" + folderName + "\\";
 
 try:
     os.mkdir(path)
@@ -62,7 +62,8 @@ while True:
     if input() == "Y":
         if __name__ == '__main__':
             zipf = zipfile.ZipFile(folderName + '.zip', 'w', zipfile.ZIP_DEFLATED)
-            zipdir(path, zipf)
+            zipdir(path+"\\in", zipf)
+            zipdir(path+"\\out", zipf)
             zipf.close()
         break
 
